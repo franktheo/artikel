@@ -1,0 +1,17 @@
+<title> List of Real Estate related articles </title>
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12">
+
+        <%= react_component('ArticlesList',
+                         { initialArticles: @articles },
+                         { prerender: params[:noprerender].nil? ? true : false }) %>
+
+        <p> <%= flash[:notice] %> </p>
+
+        <%= link_to 'Create a new article', new_article_path %>
+
+      </div>
+   </div>
+</div>
+

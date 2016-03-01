@@ -1,0 +1,16 @@
+<%= div_for article do %>
+  <div id="article_title">
+     <h4><%= link_to article.title, article %></h4x> 
+  </div>
+  <div class="author">
+    Author: <%= article.author %>
+  </div>
+  <div class="date">
+    <%= t 'Created on: ' %> 
+    <%= l article.created_at %>
+  </div>
+  <div class="content">
+    <%= article.description %>
+  </div>
+  <hr>
+<% end %>

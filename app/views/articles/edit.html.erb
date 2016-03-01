@@ -1,0 +1,17 @@
+
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-xs-10"> 
+
+        <h2>Update article</h2>
+
+        <%= form_for @article do |form| %>
+           <%= render form %>
+           <%= form.submit %> or <%= button_to 'cancel', article_path %>
+        <% end %>
+
+     </div>
+   </div>
+</div>
+

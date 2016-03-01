@@ -1,0 +1,13 @@
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-xs-10">  
+
+        <%= render @article %>
+        <%= link_to 'Edit', edit_article_path %> |
+        <%= link_to 'Destroy', article_path, :method => :delete, :confirm => 'are you sure?' %> |
+        <%= link_to 'All articles', articles_path %>
+
+     </div>
+   </div>
+</div>
+
